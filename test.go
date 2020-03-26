@@ -1,8 +1,5 @@
 package main
-import (
-	"fmt"
-	
-)
+
 // func main() {
 // // 	i, _ := strconv.Atoi("10")
 // // 	y := i * 2
@@ -13,10 +10,8 @@ import (
 
 // }
 func main() {
-	s := make([]int, 0, 3)
-	s = append(s, 100)
-	fmt.Println(len(s), cap(s))
-  }
+	var s [20]string
+}
 
 // func main() {
 // 	// var xtemp int

@@ -1,23 +1,24 @@
 package main
+
 import (
 	"fmt"
 )
 
-func main(){
-	x := []string{"a","b"};
-	fmt.Println(len(x));
-	fmt.Println(cap(x));
+func main() {
+	x := []string{"a", "b"}
+	fmt.Println(len(x))
+	fmt.Println(cap(x))
 	// make() is used to create an slice variable
-	sli := make([]int,1,2);
+	sli := make([]int, 1, 2)
 	// here only 2 arguements, 10 is the length and capacity
-	sli[0] = 10;
+	sli[0] = 10
 	fmt.Println(len(sli))
-	sli = append(sli,20)
+	sli = append(sli, 20)
 	fmt.Println(len(sli))
 	fmt.Println(sli[len(sli)-1])
-	sli = append(sli,30)
+	sli = append(sli, 30)
 	fmt.Println(sli[len(sli)-1])
-	sli = append(sli,40)
+	sli = append(sli, 40)
 	fmt.Println(sli[len(sli)-1])
 
 	fmt.Println(sli)
